@@ -16,7 +16,7 @@ class App < Sinatra::Base
     #The key should be item and the value should be the item the user entered to the purchase.
     #Make sure to store the session hash in an instance variable that you can access in the views.
     #session["item"] = params[:item]
-    @session = "test something" #params[:item]
+    @session = params[:item]
     erb :checkout
 
   end
