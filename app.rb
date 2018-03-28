@@ -17,7 +17,7 @@ class App < Sinatra::Base
     #Make sure to store the session hash in an instance variable that you can access in the views.
     #session["item"] = params[:item]
     session["item"] = "test item"
-    @session = session
+    @session = session["item"]
     erb :checkout
 
   end
